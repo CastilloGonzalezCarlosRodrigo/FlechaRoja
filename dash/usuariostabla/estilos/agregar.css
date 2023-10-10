@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: url(../img/Montaña.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+    .formulario { /*fondo de formulario*/
+      background: #52505034;
+      padding: 5px;
+      border-radius: 15px;
+      box-shadow: 0 0 30px #ffffff91;
+      color: #ffffff;
+    }
+    
+    .form-control { /*fondo de los cuadros*/
+      background: #ffffff4d;
+      border-style: none;
+      transition: 0.5s ease-in;
+      outline: none;
+      box-shadow: none;
+    }
+    
+    .form-control:focus { /*fondo de los cuadros al llenarnos*/
+      background: #ffffff4d;
+      color: #000000;
+      box-shadow: none;
+      outline: none;
+    }
+    
+    .form-control::placeholder {
+      color: #000000a4; /*color de letras de los cuadros*/
+    }
+    
+    .ingresar { /*boton*/
+      background: #0b6e64;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: 700!important;
+      color: #ffffff4d;
+      box-shadow: 0 0 30px #fff;
+    }
+    
+    .ingresar:hover {
+      color: #fff;
+      background: #0b6e64;
+    }
+    
+    .olvide {
+      color: white;
+      text-decoration-style: none;
+      text-decoration-line: none;
+    }
+    
+    .olvide:hover {
+      color: white;
+      text-decoration-style: none;
+      text-decoration-line: none;
+      cursor: pointer;
+    }
+    
+    .olvide1 { /*boton*/
+      color: white;
+      text-decoration-style: none;
+      text-decoration-line: none;
+      font-size: 20px;
+      font-weight: 700!important;
+      padding: 10px;
+      border-radius: 10px;
+      background: #ffffff;
+    }
+    
+    .olvide1:hover {
+      color: white;
+      text-decoration-style: none;
+      text-decoration-line: none;
+      cursor: pointer;
+    }
+
+  
+    @media only screen and (min-width:320px) and (max-width:768px) {
+  
+      .slider,
+      .slider ul,
+      .slider img {
+        height: 100vh;
+      }
+    }

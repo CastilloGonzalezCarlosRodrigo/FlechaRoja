@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: Arial;
+}
+
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*titulos*/
+.titulo {
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+/*fin titulos*/
+
+/*Header*/
+header {
+  width: 100%;
+  height: 550px;
+  background: url(https://flecharoja.com.mx/slides/fondo_01.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/*Fin header*/
+
+/*navegador*/
+.header {
+  background-color: #0B6E64;
+  height: 80px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+  top: 20px;
+  left: 70%;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+/* TOGGLE */
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+
+/*navegador*/
+
+/*logo*/
+
+.fondo .logo img {
+  position: absolute;
+  top: 7%;
+  width: 200px;
+}
+
+/*fin logo*/
+
+/*calendario*/
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+:root {
+  --primary-color: #0b6e64;
+  --text-color: #1d1d1d;
+  --bg-color: #f1f1fb;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendar {
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+}
+.calendar .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #0b6e64;
+}
+.calendar .header .month {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.calendar .header .btns {
+  display: flex;
+  gap: 10px;
+}
+.calendar .header .btns .btn {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--primary-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.calendar .header .btns .btn:hover {
+  background-color: #db0933;
+  transform: scale(1.05);
+}
+.weekdays {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.weekdays .day {
+  width: calc(100% / 7 - 10px);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.days .day {
+  width: calc(100% / 7 - 10px);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.days .day:not(.next):not(.prev):hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  transform: scale(1.05);
+}
+.days .day.today {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+.days .day.next,
+.days .day.prev {
+  color: #ccc;
+}
+
+/*calendario*/
+
+/*ajustar pagina*/
+@media screen and (max-width:1000px) {
+
+  header {
+    width: 100%;
+    background-size: auto;
+    background-attachment: scroll;
+}   
+
+/*fondo*/
+.fondo {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-attachment: inherit;
+}
+
+.fondo img {
+    position: absolute;
+    top: none;
+    max-width: 150px;
+    max-height: 50px;
+}
+
+/*menu lateral*/
+
+.header {
+    height: 60px;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 60px;
+}
+
+.nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #2c3e50;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+}
+
+.nav-menu-item {
+    line-height: 70px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background: none;
+    color: #ffffff;
+}
+
+.nav-toggle {
+    position: absolute;
+    top: 2px;
+    right: 0%;
+    display: block;
+}
+
+.nav-menu_visible {
+    left: 0;
+}
+
+.nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/*fin fondo lateral*/
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 50;
+    align-items: center;
+}
+
+.nav .logo {
+    height: 50px;
+}
+
+.nav .logo img {
+    width: 170px;
+}
+}
+/*fondo*/
